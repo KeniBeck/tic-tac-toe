@@ -1,4 +1,4 @@
-import pruebaJujutsu from '/public/img/pruebaJujutsu.jpeg'
+import pruebaJujutsu from '/img/pruebaJujutsu.jpeg'
 
 export const InfoAnime = () => {
     return ( 
