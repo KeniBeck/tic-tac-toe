@@ -1,6 +1,15 @@
-export const BtnHeader = ({title}) => {
+import { useBtnHeader } from "./BtnHeaderLogic";
+
+
+export const BtnHeader = ({ title, nav }) => {
+
+    const {
+        navigate
+    }=useBtnHeader()
     return ( 
-        <div className="hidden lg:block">
+        <div
+            onClick={()=>navigate('/'+nav)}
+            className="hidden lg:block">
             <div className="w-32 py-2 flex text-center justify-center rounded-3xl text-xl font-medium cursor-pointer text-slate-900 bg-slate-500 hover:bg-slate-600 ">
                 {title}
             </div>

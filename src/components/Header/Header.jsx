@@ -16,7 +16,7 @@ export const Header = () => {
         <>
         <div className="w-full h-[70px] xl:h-[90px] px-6 flex justify-between items-center bg-[#272727]">
             <div className="flex ">
-                <a href="/">
+                <a href="/home">
                     <div className="w-10 h-10 rounded-full bg-white">logo</div>
                 </a>    
                     
@@ -34,8 +34,8 @@ export const Header = () => {
                 }
                     
                 
-                <BtnHeader title="Top" />
-                <BtnHeader title="Catalogo" />
+                    <BtnHeader title="Top" nav={'home'} />
+                    <BtnHeader title="Catalogo" nav={'home'} />
                 <NavBar />
                 <div className="lg:hidden">
                     <IoMenu onClick={()=>toggleSidebar()} className="text-5xl" />
